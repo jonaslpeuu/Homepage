@@ -151,7 +151,7 @@ scene.background = new THREE.Color(0xf6f8f6);
 
 const camera = new THREE.OrthographicCamera(-10, 10, 6, -6, 0.1, 120);
 camera.position.set(-32, 24, 32);
-camera.zoom = 0.96;
+camera.zoom = 1.08;
 camera.updateProjectionMatrix();
 
 const group = new THREE.Group();
@@ -272,10 +272,10 @@ function resize() {
   const width = Math.max(1, Math.round(rect?.width || window.innerWidth));
   const height = Math.max(1, Math.round(rect?.height || window.innerHeight));
   const aspect = width / height;
-  camera.left = -15.5 * aspect;
-  camera.right = 15.5 * aspect;
-  camera.top = 15.5;
-  camera.bottom = -15.5;
+  camera.left = -13.8 * aspect;
+  camera.right = 13.8 * aspect;
+  camera.top = 13.8;
+  camera.bottom = -13.8;
   camera.updateProjectionMatrix();
   renderer.setSize(width, height, false);
 }

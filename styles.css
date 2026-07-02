@@ -17,6 +17,7 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-color: #4a5052 #07090b;
 }
 
 body {
@@ -32,6 +33,24 @@ body {
 
 body.modal-open {
   overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07090b;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 3px solid #07090b;
+  border-radius: 999px;
+  background: #4a5052;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #667073;
 }
 
 a {
@@ -99,19 +118,11 @@ button:focus-visible {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 0;
   max-width: max-content;
   font-size: 14px;
   font-weight: 650;
   cursor: pointer;
-}
-
-.brand-mark {
-  width: 18px;
-  height: 18px;
-  border: 1px solid var(--green);
-  background: linear-gradient(135deg, var(--green), transparent 58%);
-  box-shadow: 0 0 30px rgba(117, 255, 145, 0.35);
 }
 
 .site-header nav {
