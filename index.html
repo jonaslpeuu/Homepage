@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080a0d" />
+    <title>hoppedev.app - Independent iOS Apps</title>
+    <meta
+      name="description"
+      content="hoppedev.app is the home for independent iOS apps published on the App Store."
+    />
+    <meta property="og:title" content="hoppedev.app" />
+    <meta
+      property="og:description"
+      content="Independent iOS apps, crafted with care for fast, focused everyday use."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hoppedev.app" />
+    <link rel="canonical" href="https://hoppedev.app" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="hoppedev.app home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>hoppedev.app</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#apps">Apps</a>
+        <a href="#all-apps">All Apps</a>
+        <a href="#studio">Studio</a>
+        <a href="#contact">Contact</a>
+        <a href="#legal">Legal</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <canvas id="scene" aria-hidden="true"></canvas>
+        <div class="grain" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">Independent iOS development</p>
+          <h1>hoppedev.app</h1>
+          <p class="lede">
+            Focused iPhone apps with quiet interfaces, clean engineering, and a bias toward tools
+            people can use every day.
+          </p>
+        </div>
+        <div class="hero-meta" aria-label="Site details">
+          <div>
+            <span>Domain</span>
+            <strong>hoppedev.app</strong>
+          </div>
+          <div>
+            <span>Platform</span>
+            <strong>iOS</strong>
+          </div>
+          <div>
+            <span>Status</span>
+            <strong>First apps coming soon</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section apps-section" id="apps">
+        <div class="section-label">
+          <span>01</span>
+          <p>Products</p>
+        </div>
+        <div class="section-body">
+          <h2>Featured apps from the App Store.</h2>
+          <p>
+            The three featured slots update from the App Store feed. New releases appear
+            automatically, and the full catalog is listed below.
+          </p>
+          <div class="app-grid" id="featured-apps" aria-label="Featured apps">
+            <p class="loading-copy">Loading App Store apps...</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section all-apps-section" id="all-apps">
+        <div class="section-label">
+          <span>02</span>
+          <p>All Apps</p>
+        </div>
+        <div class="section-body">
+          <div class="catalog-heading">
+            <h2>Every app, always current.</h2>
+            <a class="developer-link" href="https://apps.apple.com/us/developer/johanna-hoppe/id1869099620" target="_blank" rel="noreferrer">Developer page</a>
+          </div>
+          <div class="all-apps-list" id="all-apps-list" aria-label="All App Store apps"></div>
+        </div>
+      </section>
+
+      <section class="section studio-section" id="studio">
+        <div class="section-label">
+          <span>03</span>
+          <p>Studio</p>
+        </div>
+        <div class="section-body split">
+          <h2>Built small, shipped carefully.</h2>
+          <div>
+            <p>
+              hoppedev.app is a compact home for independent iOS apps. The site is intentionally
+              sparse: less agency language, more room for the products once they are ready.
+            </p>
+            <ul class="principles">
+              <li>Native-feeling iOS interfaces</li>
+              <li>Fast launches and low-friction flows</li>
+              <li>Clear privacy and support information</li>
+              <li>Product pages that can grow app by app</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="section-label">
+          <span>04</span>
+          <p>Contact</p>
+        </div>
+        <div class="section-body contact-panel">
+          <p class="eyebrow">For support, press, and product questions</p>
+          <h2>Reach the maker behind hoppedev.app.</h2>
+          <a class="contact-link" href="mailto:hello@hoppedev.app">hello@hoppedev.app</a>
+        </div>
+      </section>
+
+      <section class="section legal-section" id="legal">
+        <div class="section-label">
+          <span>05</span>
+          <p>Legal</p>
+        </div>
+        <div class="section-body legal-grid">
+          <article>
+            <h2>Imprint</h2>
+            <p>
+              Information according to Sec. 5 German Digital Services Act will be added here once
+              the final business details are available.
+            </p>
+            <dl>
+              <div>
+                <dt>Responsible person</dt>
+                <dd>To be added</dd>
+              </div>
+              <div>
+                <dt>Address</dt>
+                <dd>To be added</dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:hello@hoppedev.app">hello@hoppedev.app</a></dd>
+              </div>
+              <div>
+                <dt>VAT ID</dt>
+                <dd>To be added if applicable</dd>
+              </div>
+            </dl>
+          </article>
+          <article>
+            <h2>Privacy</h2>
+            <p>
+              This first static version does not set cookies, does not include analytics, and does
+              not process form submissions. If you send an email, your email app and mail provider
+              handle that communication.
+            </p>
+            <p>
+              App-specific privacy policies will be linked from each product card before release.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Copyright <span id="year"></span> hoppedev.app. All rights reserved.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <div class="app-modal" id="app-modal" aria-hidden="true">
+      <button class="modal-backdrop" type="button" data-close-modal aria-label="Close app details"></button>
+      <section class="modal-window" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <header class="modal-header">
+          <div class="modal-title-block">
+            <img id="modal-icon" alt="" />
+            <div>
+              <h2 id="modal-title">App name</h2>
+              <p id="modal-subtitle">App subtitle</p>
+            </div>
+          </div>
+          <button class="modal-close" type="button" data-close-modal aria-label="Close app details">
+            <span aria-hidden="true"></span>
+          </button>
+        </header>
+        <div class="modal-content">
+          <div class="modal-copy">
+            <p id="modal-description"></p>
+            <div class="modal-actions">
+              <a id="modal-store-link" href="#" target="_blank" rel="noreferrer">Open App Store</a>
+            </div>
+          </div>
+          <div class="modal-screenshots" id="modal-screenshots" aria-label="App screenshots"></div>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

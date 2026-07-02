@@ -1,0 +1,447 @@
+{
+  "developer": {
+    "id": 1869099620,
+    "name": "Johanna Hoppe",
+    "url": "https://apps.apple.com/us/developer/johanna-hoppe/id1869099620"
+  },
+  "updatedAt": "2026-07-02T16:03:53.436Z",
+  "featured": [
+    {
+      "id": 6760844803,
+      "name": "PureVault: Private Photo Vault",
+      "subtitle": "No Cloud, Face ID Lock",
+      "description": "PureVault protects your private photos and videos locally on your iPhone.\nYour data stays on-device and is stored in encrypted form.\n\nFeatures:\n• App lock with Face ID, Touch ID, or passcode\n• Secure local vault for sensitive media\n• Fast import from your photo library\n• Clean management with favorites and metadata\n• No account required, no forced tracking, no mandatory cloud upload\n\nIdeal for personal, confidential, or sensitive content you want to keep protected.\nPureVault gives you control, privacy, and peace of mind every day.\n\n===\nTerms of Use: https://purevault.netlify.app/privacy-policy.html",
+      "shortDescription": "PureVault protects your private photos and videos locally on your iPhone.",
+      "category": "Photo & Video",
+      "genres": [
+        "Photo & Video",
+        "Utilities"
+      ],
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8d/1a/11/8d1a113e-8060-d75b-8229-578120ce54c8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/02/0a/df/020adfc8-b458-d67b-25ed-e965ad6443a6/01-private-photos-locked-1284x2778.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/25/01/90/250190ce-35dd-5a0e-b064-3b01cbcbee84/02-stays-on-this-iphone-1284x2778.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ad/c0/62/adc062c4-306b-1bd5-43fc-9b0fc977d8a9/03-unlock-with-face-id-1284x2778.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/53/5c/b7/535cb7be-619b-4bc7-6857-a9eef3f656a6/04-choose-what-enters-1284x2778.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6a/f3/aa/6af3aa4d-db60-ebcc-445f-6b01379fdd9c/05-organized-in-private-1284x2778.png/300x650bb-60.jpg"
+      ],
+      "appStoreUrl": "https://apps.apple.com/us/app/purevault-private-photo-vault/id6760844803?uo=4",
+      "supportUrl": "https://purevault.netlify.app/",
+      "price": "Free",
+      "rating": 5,
+      "ratingCount": 1,
+      "version": "1.7",
+      "releaseDate": "2026-03-24T07:00:00Z",
+      "updatedAt": "2026-06-03T20:56:45Z",
+      "minimumOsVersion": "18.0"
+    },
+    {
+      "id": 6761554226,
+      "name": "JustPDF: Offline PDF Reader",
+      "subtitle": "Private Viewer, Local Library",
+      "description": "JustPDF is a minimalist PDF reader for people who want one simple place for the PDFs that matter.\n\nImport PDFs from Files, Mail, Safari, AirDrop, or other apps and keep them stored locally on your device. Read offline, zoom naturally, scroll without clutter, and reopen documents from a quiet private library built for focus.\n\nWhy people choose JustPDF:\n• Offline PDF reader\n• Private on-device storage\n• Clean PDF viewer with no ads\n• No account and no cloud dependency\n• Fast access to your personal PDF library\n• One-time purchase, no subscription\n\nStart free with your first 3 PDFs. When you need more, unlock unlimited imports with a single lifetime purchase.\n\nJustPDF is built for reading, not for bloat. If you want a calm, local PDF reader that stays out of your way, this is it.",
+      "shortDescription": "JustPDF is a minimalist PDF reader for people who want one simple place for the PDFs that matter.",
+      "category": "Productivity",
+      "genres": [
+        "Productivity",
+        "Utilities"
+      ],
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/39/9d/60/399d6082-fd73-4e6a-2480-3e65fd262ddd/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ed/0f/aa/ed0faa2f-6768-97b4-4bfc-6583e17cc8f5/01-quiet-home-1242x2688-gallery-en.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/84/74/9d/84749d5a-b4ce-f45a-e7b7-644bad78dd1a/02-find-fast-1242x2688-gallery-en.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/71/3e/96/713e962b-033a-2e11-e44a-704ed26d4742/03-clean-reader-1242x2688-gallery-en.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0f/e8/d5/0fe8d587-b0b0-7bd1-4e7e-e53f85c618f3/04-work-folder-1242x2688-gallery-en.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/01/2d/4c/012d4cb3-41cc-9afc-77d7-5cfcf6886d41/05-light-tags-1242x2688-gallery-en.png/300x650bb-60.jpg"
+      ],
+      "appStoreUrl": "https://apps.apple.com/us/app/justpdf-offline-pdf-reader/id6761554226?uo=4",
+      "supportUrl": "https://justpdf-app.netlify.app/#top",
+      "price": "Free",
+      "rating": null,
+      "ratingCount": 0,
+      "version": "1.3",
+      "releaseDate": "2026-05-10T07:00:00Z",
+      "updatedAt": "2026-05-30T17:05:28Z",
+      "minimumOsVersion": "18.6"
+    },
+    {
+      "id": 6760934360,
+      "name": "Minus. – Subscription Tracker",
+      "subtitle": "Track expenses. Not your data.",
+      "description": "Tired of subscription trackers that demand your bank login and charge you a monthly fee? Meet Minus.\n\nMinus. is a brutalist, privacy-first subscription manager that helps you calculate your true monthly burn rate without ever compromising your data.\n\nKEY FEATURES:\n• 100% Offline & Private: Your financial data never leaves your device. We use Apple's native secure storage.\n• No Bank Logins: Add your subscriptions manually for total control and security.\n• True Monthly Burn Rate: Automatically converts yearly and weekly subscriptions into a clear monthly cost.\n• Smart Push Reminders: Get notified exactly 3 days before a subscription renews so you can cancel in time.\n• Brutalist Minimal Design: A distraction-free, lightning-fast interface with full Dark Mode support.\n\nMINUS. PRO (One-Time Purchase):\nWe hate subscription fatigue as much as you do. Upgrade to Minus. Pro with a single, one-time payment to unlock unlimited subscription tracking and secure your data with Face ID / Touch ID. Track subscriptions, not your data.",
+      "shortDescription": "Tired of subscription trackers that demand your bank login and charge you a monthly fee?",
+      "category": "Finance",
+      "genres": [
+        "Finance",
+        "Productivity"
+      ],
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/48/55/0c/48550c55-f863-dcfa-6854-5285ef28a7c2/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7a/9e/a7/7a9ea7b3-34e5-c3b8-4bf4-e7532558d82e/01-hero-a-iphone-real-1242x2688.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/75/d8/a1/75d8a151-3530-a193-a51c-d56bc49dcf09/02-fast-entry-a-iphone-real-1242x2688.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/70/b4/04/70b404b6-adb9-1c94-c165-8f9c99403b20/03-cut-waste-a-iphone-real-1242x2688.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/15/6f/04/156f047f-912d-b8a7-8c9d-95542de4ced8/04-bill-alerts-a-iphone-real-1242x2688.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/26/3c/a8/263ca840-c97a-b010-5c86-527b507c6f1b/05-cancel-faster-a-iphone-real-1242x2688.png/300x650bb-60.jpg"
+      ],
+      "appStoreUrl": "https://apps.apple.com/us/app/minus-subscription-tracker/id6760934360?uo=4",
+      "supportUrl": "https://minus-app.netlify.app/",
+      "price": "Free",
+      "rating": null,
+      "ratingCount": 0,
+      "version": "1.5",
+      "releaseDate": "2026-03-29T07:00:00Z",
+      "updatedAt": "2026-05-26T17:50:44Z",
+      "minimumOsVersion": "18.0"
+    }
+  ],
+  "apps": [
+    {
+      "id": 6760844803,
+      "name": "PureVault: Private Photo Vault",
+      "subtitle": "No Cloud, Face ID Lock",
+      "description": "PureVault protects your private photos and videos locally on your iPhone.\nYour data stays on-device and is stored in encrypted form.\n\nFeatures:\n• App lock with Face ID, Touch ID, or passcode\n• Secure local vault for sensitive media\n• Fast import from your photo library\n• Clean management with favorites and metadata\n• No account required, no forced tracking, no mandatory cloud upload\n\nIdeal for personal, confidential, or sensitive content you want to keep protected.\nPureVault gives you control, privacy, and peace of mind every day.\n\n===\nTerms of Use: https://purevault.netlify.app/privacy-policy.html",
+      "shortDescription": "PureVault protects your private photos and videos locally on your iPhone.",
+      "category": "Photo & Video",
+      "genres": [
+        "Photo & Video",
+        "Utilities"
+      ],
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8d/1a/11/8d1a113e-8060-d75b-8229-578120ce54c8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/02/0a/df/020adfc8-b458-d67b-25ed-e965ad6443a6/01-private-photos-locked-1284x2778.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/25/01/90/250190ce-35dd-5a0e-b064-3b01cbcbee84/02-stays-on-this-iphone-1284x2778.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ad/c0/62/adc062c4-306b-1bd5-43fc-9b0fc977d8a9/03-unlock-with-face-id-1284x2778.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/53/5c/b7/535cb7be-619b-4bc7-6857-a9eef3f656a6/04-choose-what-enters-1284x2778.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6a/f3/aa/6af3aa4d-db60-ebcc-445f-6b01379fdd9c/05-organized-in-private-1284x2778.png/300x650bb-60.jpg"
+      ],
+      "appStoreUrl": "https://apps.apple.com/us/app/purevault-private-photo-vault/id6760844803?uo=4",
+      "supportUrl": "https://purevault.netlify.app/",
+      "price": "Free",
+      "rating": 5,
+      "ratingCount": 1,
+      "version": "1.7",
+      "releaseDate": "2026-03-24T07:00:00Z",
+      "updatedAt": "2026-06-03T20:56:45Z",
+      "minimumOsVersion": "18.0"
+    },
+    {
+      "id": 6761554226,
+      "name": "JustPDF: Offline PDF Reader",
+      "subtitle": "Private Viewer, Local Library",
+      "description": "JustPDF is a minimalist PDF reader for people who want one simple place for the PDFs that matter.\n\nImport PDFs from Files, Mail, Safari, AirDrop, or other apps and keep them stored locally on your device. Read offline, zoom naturally, scroll without clutter, and reopen documents from a quiet private library built for focus.\n\nWhy people choose JustPDF:\n• Offline PDF reader\n• Private on-device storage\n• Clean PDF viewer with no ads\n• No account and no cloud dependency\n• Fast access to your personal PDF library\n• One-time purchase, no subscription\n\nStart free with your first 3 PDFs. When you need more, unlock unlimited imports with a single lifetime purchase.\n\nJustPDF is built for reading, not for bloat. If you want a calm, local PDF reader that stays out of your way, this is it.",
+      "shortDescription": "JustPDF is a minimalist PDF reader for people who want one simple place for the PDFs that matter.",
+      "category": "Productivity",
+      "genres": [
+        "Productivity",
+        "Utilities"
+      ],
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/39/9d/60/399d6082-fd73-4e6a-2480-3e65fd262ddd/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ed/0f/aa/ed0faa2f-6768-97b4-4bfc-6583e17cc8f5/01-quiet-home-1242x2688-gallery-en.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/84/74/9d/84749d5a-b4ce-f45a-e7b7-644bad78dd1a/02-find-fast-1242x2688-gallery-en.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/71/3e/96/713e962b-033a-2e11-e44a-704ed26d4742/03-clean-reader-1242x2688-gallery-en.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0f/e8/d5/0fe8d587-b0b0-7bd1-4e7e-e53f85c618f3/04-work-folder-1242x2688-gallery-en.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/01/2d/4c/012d4cb3-41cc-9afc-77d7-5cfcf6886d41/05-light-tags-1242x2688-gallery-en.png/300x650bb-60.jpg"
+      ],
+      "appStoreUrl": "https://apps.apple.com/us/app/justpdf-offline-pdf-reader/id6761554226?uo=4",
+      "supportUrl": "https://justpdf-app.netlify.app/#top",
+      "price": "Free",
+      "rating": null,
+      "ratingCount": 0,
+      "version": "1.3",
+      "releaseDate": "2026-05-10T07:00:00Z",
+      "updatedAt": "2026-05-30T17:05:28Z",
+      "minimumOsVersion": "18.6"
+    },
+    {
+      "id": 6760934360,
+      "name": "Minus. – Subscription Tracker",
+      "subtitle": "Track expenses. Not your data.",
+      "description": "Tired of subscription trackers that demand your bank login and charge you a monthly fee? Meet Minus.\n\nMinus. is a brutalist, privacy-first subscription manager that helps you calculate your true monthly burn rate without ever compromising your data.\n\nKEY FEATURES:\n• 100% Offline & Private: Your financial data never leaves your device. We use Apple's native secure storage.\n• No Bank Logins: Add your subscriptions manually for total control and security.\n• True Monthly Burn Rate: Automatically converts yearly and weekly subscriptions into a clear monthly cost.\n• Smart Push Reminders: Get notified exactly 3 days before a subscription renews so you can cancel in time.\n• Brutalist Minimal Design: A distraction-free, lightning-fast interface with full Dark Mode support.\n\nMINUS. PRO (One-Time Purchase):\nWe hate subscription fatigue as much as you do. Upgrade to Minus. Pro with a single, one-time payment to unlock unlimited subscription tracking and secure your data with Face ID / Touch ID. Track subscriptions, not your data.",
+      "shortDescription": "Tired of subscription trackers that demand your bank login and charge you a monthly fee?",
+      "category": "Finance",
+      "genres": [
+        "Finance",
+        "Productivity"
+      ],
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/48/55/0c/48550c55-f863-dcfa-6854-5285ef28a7c2/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7a/9e/a7/7a9ea7b3-34e5-c3b8-4bf4-e7532558d82e/01-hero-a-iphone-real-1242x2688.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/75/d8/a1/75d8a151-3530-a193-a51c-d56bc49dcf09/02-fast-entry-a-iphone-real-1242x2688.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/70/b4/04/70b404b6-adb9-1c94-c165-8f9c99403b20/03-cut-waste-a-iphone-real-1242x2688.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/15/6f/04/156f047f-912d-b8a7-8c9d-95542de4ced8/04-bill-alerts-a-iphone-real-1242x2688.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/26/3c/a8/263ca840-c97a-b010-5c86-527b507c6f1b/05-cancel-faster-a-iphone-real-1242x2688.png/300x650bb-60.jpg"
+      ],
+      "appStoreUrl": "https://apps.apple.com/us/app/minus-subscription-tracker/id6760934360?uo=4",
+      "supportUrl": "https://minus-app.netlify.app/",
+      "price": "Free",
+      "rating": null,
+      "ratingCount": 0,
+      "version": "1.5",
+      "releaseDate": "2026-03-29T07:00:00Z",
+      "updatedAt": "2026-05-26T17:50:44Z",
+      "minimumOsVersion": "18.0"
+    },
+    {
+      "id": 6765610284,
+      "name": "PipDose: Pet Med Reminder",
+      "subtitle": "Dose Tracker & Refill Alerts",
+      "description": "PipDose is a simple pet medication reminder and dose tracker for dogs, cats, and other pets.\n\nKeep every dose easy to see, set local reminders, and log care in one tap. PipDose is built for everyday pet routines: tablets, drops, liquids, topical meds, injections, refill tracking, and simple dose history.\n\nNo account. No backend. No analytics. Pet names, medications, schedules, and dose history stay on your device.\n\nWhy pet owners use PipDose:\n\n• Clear next-dose view\n• Local medication reminders\n• Simple taken, skipped, and snoozed dose logging\n• Pet profiles with calm pixel avatars\n• Medication details, dosage, form, and instructions\n• Refill tracking for supplies\n• Upcoming dose overview\n• Private local storage with SwiftData\n• Lifetime unlock available with one purchase\n\nPipDose is designed to be calm, fast, and focused. No complicated dashboards. No account setup. Just your pet’s care routine, clearly organized.\n\nImportant: PipDose is a reminder and tracking tool. It does not replace veterinary advice, emergency care, or professional medical judgment.",
+      "shortDescription": "PipDose is a simple pet medication reminder and dose tracker for dogs, cats, and other pets.",
+      "category": "Medical",
+      "genres": [
+        "Medical",
+        "Lifestyle"
+      ],
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a7/48/1e/a7481e00-8657-7cd4-703c-0834ffc45346/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/ad/5d/f1ad5d6e-ed85-dc04-a0f8-3c9ff3b430e8/01-never-miss-a-dose-1320x2868.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/49/09/b0/4909b059-2f42-0770-dab4-d769a1b77575/02-set-meds-in-seconds-1320x2868.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fa/c0/c4/fac0c442-0ae7-6c8f-11a9-f82776eaac50/03-know-whats-next-1320x2868.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e0/5f/6b/e05f6be4-73fd-5a7d-3310-5b2e35bf38ad/04-log-care-with-one-tap-1320x2868.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b1/5d/ae/b15dae86-2ba4-f02f-6ca3-643f08bd5ea3/05-every-pet-in-view-1320x2868.png/300x650bb-60.jpg"
+      ],
+      "appStoreUrl": "https://apps.apple.com/us/app/pipdose-pet-med-reminder/id6765610284?uo=4",
+      "supportUrl": "https://pipdose-app.netlify.app/",
+      "price": "Free",
+      "rating": null,
+      "ratingCount": 0,
+      "version": "1.0",
+      "releaseDate": "2026-05-26T07:00:00Z",
+      "updatedAt": "2026-05-26T14:26:49Z",
+      "minimumOsVersion": "18.6"
+    },
+    {
+      "id": 6758950255,
+      "name": "Echo - Voice Notes App",
+      "subtitle": "Speech to Text, Private & Fast",
+      "description": "Echo turns your voice into text — instantly, privately, and without distraction.\n\nOpen the app, tap the microphone, and speak. Echo transcribes everything in real time, right on your iPhone. No cloud. No waiting. No sign-up.\n\nWHY ECHO?\n\nYou have an idea in the shower. A thought on your walk. A grocery list in the car. Echo is made for exactly these moments — when you don't have time to type, but don't want to lose your thoughts.\n\nHOW IT WORKS\n\n1. Tap the microphone\n2. Speak your thought\n3. Echo transcribes in real time\n4. Done — your note is saved\n\nThat's it. No onboarding marathon. No folders. No tags. No distractions.\n\n100% PRIVATE\n\nYour voice never leaves your iPhone. Speech recognition runs entirely on-device — no internet, no cloud, no servers. No trackers. No ads. No third-party SDKs. Your thoughts belong to you.\n\nSMART FEATURES\n\n• Real-time transcription — See your text as you speak\n• Auto-cleanup — Filler words like \"um\" and \"like\" are removed\n• Live search — Find any note in milliseconds\n• Audio playback — Listen to the original recording of any note\n• Share as webpage — Minimalist link, auto-deleted after 30 days\n• Home screen widget — Start recordings without opening the app\n• Siri Shortcuts — \"Hey Siri, start Echo recording\"\n• Live Activity — See recording duration on your lock screen\n• Dark mode — Perfect for late-night thoughts\n• Haptic feedback — Feel every minute of recording\n\nWHO IS ECHO FOR?\n\n• Creatives who want to capture ideas\n• Students for quick lecture notes\n• Commuters with thoughts on the go\n• Anyone who hates typing but loves notes\n\nEcho is a one-time purchase of $4.99. No subscriptions. No in-app purchases. No hidden costs.\n\nMinimalist. Private. Simple.",
+      "shortDescription": "Echo turns your voice into text — instantly, privately, and without distraction.",
+      "category": "Productivity",
+      "genres": [
+        "Productivity",
+        "Utilities"
+      ],
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/57/b2/56/57b25610-4a35-6486-6588-ad04213a054a/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e7/cb/aa/e7cbaabb-582e-be5a-7a32-074b6d254e3a/echo-en-1-main-viewF.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0e/45/7c/0e457cae-8d77-b3f3-4971-9d90c58a2a05/echo-en-2-recording.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/98/ac/98/98ac9889-8fd8-24be-b1b0-7886b90a0d70/echo-en-3-search.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/da/91/1f/da911f1d-c18a-ed84-fe4d-4472370bde17/echo-en-4-share.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/78/d6/c9/78d6c94b-b0ca-9222-3687-e6c80b11df36/echo-en-5-widget.png/300x650bb-60.jpg"
+      ],
+      "appStoreUrl": "https://apps.apple.com/us/app/echo-voice-notes-app/id6758950255?uo=4",
+      "supportUrl": "https://echonotes-app.netlify.app/?lang=en#",
+      "price": "Free",
+      "rating": null,
+      "ratingCount": 0,
+      "version": "1.7.2",
+      "releaseDate": "2026-02-16T08:00:00Z",
+      "updatedAt": "2026-05-23T21:31:52Z",
+      "minimumOsVersion": "18.6"
+    },
+    {
+      "id": 6757084586,
+      "name": "InventoryFix: Inventory & Scan",
+      "subtitle": "Organize Home, Moving & Stock",
+      "description": "InventoryFix helps you turn your home, storage room, garage, workshop or small stock into a searchable digital inventory.\n\nAdd items with photos, let AI suggest names and tags, place everything into containers, boxes, rooms or shelves, and find it again in seconds. Whether you are moving, organizing household items, tracking tools, sorting supplies or documenting valuables, InventoryFix keeps your physical things easy to search and manage.\n\nKey features:\n\nAI photo scan\nTake a photo and InventoryFix helps recognize items, names and useful tags, so you do not have to type long inventory lists manually.\n\nQR code containers\nCreate QR codes for boxes, shelves or storage containers. Print or share the code, attach it to the container, then scan it later to open the right inventory instantly.\n\nSmart search\nSearch by item name, tag, box, room, shelf or storage location. Find tools, documents, supplies, seasonal items, household goods and moving boxes without digging through everything.\n\nContainers and items\nBuild a clear structure for your home inventory: rooms, boxes, shelves, drawers, garage storage, workshop supplies, moving cartons or small business stock.\n\nShare with family\nShare containers with family members using a share code, so everyone can help keep the same inventory organized.\n\nPrivacy choice\nUse On-Device AI for local processing on your iPhone, or choose Cloud AI when you want stronger recognition. You stay in control of how your images are analyzed.\n\nCSV export\nExport your inventory data when you need a backup, spreadsheet, insurance list or moving overview.\n\nPerfect for:\nHome inventory\nMoving boxes\nGarage organization\nBasement and attic storage\nWorkshop tools\nHousehold supplies\nCollectibles and valuables\nSmall stock management\nInsurance documentation\nDecluttering and storage planning\n\nStop guessing what is inside each box. Scan, organize and find your things with InventoryFix.",
+      "shortDescription": "InventoryFix helps you turn your home, storage room, garage, workshop or small stock into a searchable digital inventory.",
+      "category": "Productivity",
+      "genres": [
+        "Productivity",
+        "Lifestyle"
+      ],
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4c/5f/87/4c5f87ec-cb65-6c29-2eba-9824fa4f8945/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/87/92/36/8792361c-8175-6535-ca3b-a10e22fbf004/01-know-where-it-is-en-1242x2688.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b0/83/ef/b083ef4f-afe5-0c8a-89ce-f37ff8549591/02-snap-it-save-it-en-1242x2688.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f4/a4/ff/f4a4ff27-9156-56ed-5d13-1ae703636793/03-sort-every-shelf-en-1242x2688.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/08/b8/9c/08b89c4f-561d-ed2c-a64d-f1f245f1446f/04-find-it-fast-en-1242x2688.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8c/61/3c/8c613cfa-0d2b-1485-e5bf-403576434778/05-scan-whole-batches-en-1242x2688.png/300x650bb-60.jpg"
+      ],
+      "appStoreUrl": "https://apps.apple.com/us/app/inventoryfix-inventory-scan/id6757084586?uo=4",
+      "supportUrl": "https://inventoryfix.netlify.app/",
+      "price": "Free",
+      "rating": 5,
+      "ratingCount": 1,
+      "version": "1.9.1",
+      "releaseDate": "2026-01-06T08:00:00Z",
+      "updatedAt": "2026-05-11T02:58:58Z",
+      "minimumOsVersion": "18.6"
+    },
+    {
+      "id": 6763550977,
+      "name": "Useby: Food Expiry Scanner",
+      "subtitle": "Scan dates. Waste less.",
+      "description": "Useby helps you keep track of food expiry dates with one simple flow: take a photo, confirm the use-by date, and save it locally.\n\nNo accounts. No cloud. No clutter.\n\nUseby reads packaging photos on your iPhone and helps you organize what should be used first. It is designed for people who want a clean, private, minimal way to avoid forgotten food in the fridge or pantry.\n\nWhat you can do with Useby:\n\n• Scan food packaging photos\n• Detect product names and expiry dates\n• Confirm or edit every result before saving\n• Sort items by what expires soonest\n• Organize food by category\n• Add reminders before food expires\n• Keep everything stored locally on your iPhone\n\nUseby is built around a simple idea:\nknow what goes first.\n\nThe app is local-first by design. Your scans and saved food items stay on your device. There is no account system, no backend, and no cloud database for your food list.\n\nUseby is not a recipe app, grocery delivery app, or meal planner. It is a focused expiry scanner for people who want less waste, fewer forgotten packages, and a calmer way to manage food dates.",
+      "shortDescription": "Useby helps you keep track of food expiry dates with one simple flow: take a photo, confirm the use-by date, and save it locally.",
+      "category": "Food & Drink",
+      "genres": [
+        "Food & Drink",
+        "Utilities"
+      ],
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9a/84/ba/9a84bae7-96e9-010e-4ca2-07e6643f7313/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0c/bb/5b/0cbb5b99-d0de-6808-a9f2-5c6ab2ab463c/01-see-what-goes-first-1284x2778.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e8/59/8d/e8598db1-4072-92f0-3c19-4143b29a581c/02-scan-the-package-1284x2778.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/38/96/b6/3896b6b8-1ae5-e1ee-1390-68a29b90851e/03-check-the-date-1284x2778.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/93/e7/f6/93e7f6e0-0a0a-2c3d-6188-9c2eb81cc490/04-use-food-in-time-1284x2778.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5d/5b/be/5d5bbeef-32b8-b83a-1095-4d820b0a16dd/05-nothing-leaves-your-iphone-1284x2778.png/300x650bb-60.jpg"
+      ],
+      "appStoreUrl": "https://apps.apple.com/us/app/useby-food-expiry-scanner/id6763550977?uo=4",
+      "supportUrl": "https://getuseby.netlify.app/",
+      "price": "Free",
+      "rating": null,
+      "ratingCount": 0,
+      "version": "1.1",
+      "releaseDate": "2026-04-30T07:00:00Z",
+      "updatedAt": "2026-05-03T01:57:48Z",
+      "minimumOsVersion": "18.6"
+    },
+    {
+      "id": 6759916701,
+      "name": "ScanOnce",
+      "subtitle": "Private Document Scanner & OCR",
+      "description": "ScanOnce helps you capture, organize, and understand documents quickly.\n\n• Fast document scanning with automatic page capture\n• On-device OCR text extraction\n• Smart document insights (sender, totals, dates, invoice details)\n• Ask questions about your scanned document\n• Export and share as PDF\n• Privacy-first workflow with local processing\n\nUpgrade once for Lifetime Access to unlimited scanning.",
+      "shortDescription": "ScanOnce helps you capture, organize, and understand documents quickly.",
+      "category": "Productivity",
+      "genres": [
+        "Productivity",
+        "Finance"
+      ],
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/df/64/6d/df646d20-c1c6-995f-dc45-d46949fa4043/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/88/5a/13/885a13d1-f05b-a945-497e-47042c87cc61/Apple_iPhone_16_Pro_Max_Screenshot_1.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/75/33/3f/75333f78-d8f7-e192-5291-56249073d88b/Apple_iPhone_16_Pro_Max_Screenshot_2.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/46/ad/ff/46adfff5-48e6-3ffa-071a-8c03842bd75e/Apple_iPhone_16_Pro_Max_Screenshot_3.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/32/76/55/327655ab-6c3e-88ee-4fc3-6480309e69ad/Apple_iPhone_16_Pro_Max_Screenshot_4.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5c/28/35/5c28353b-9745-a1b7-3c1b-da31835ad218/Apple_iPhone_16_Pro_Max_Screenshot_5.png/300x650bb-60.jpg"
+      ],
+      "appStoreUrl": "https://apps.apple.com/us/app/scanonce/id6759916701?uo=4",
+      "supportUrl": "",
+      "price": "Free",
+      "rating": null,
+      "ratingCount": 0,
+      "version": "1.1",
+      "releaseDate": "2026-03-05T08:00:00Z",
+      "updatedAt": "2026-04-20T22:29:07Z",
+      "minimumOsVersion": "17.0"
+    },
+    {
+      "id": 6761756575,
+      "name": "Keepy: Photo Cleaner",
+      "subtitle": "Clean Up Photos Privately",
+      "description": "Keepy helps you clean up your camera roll faster — without sacrificing privacy.\n\nSwipe through photos one by one, sort screenshots and similar images into smart groups, and review everything before deleting.\n\nUnlike many photo cleaner apps, Keepy processes everything directly on your device.\nYour photos stay private. Nothing is uploaded.\n\nFEATURES\n\n• Swipe to sort photos quickly  \nDecide what to keep or delete with one swipe per photo.\n\n• Smart photo groups  \nStart with screenshots, similar photos, large videos, live photos, and more.\n\n• Review before delete  \nNothing is deleted automatically. Double-check before removing anything.\n\n• 100% on-device processing  \nYour photos never leave your iPhone.\n\n• Progress saved locally  \nPick up where you left off anytime.\n\nWHY KEEPY\n\nMost camera roll cleaner apps upload your photos to external servers.\nKeepy was built differently:\nPrivate by design.\n\nPerfect for:\n• Cleaning up screenshots  \n• Removing duplicate-like photos  \n• Freeing up storage  \n• Organizing messy camera rolls  \n• Reviewing old photos faster\n\nTake back control of your camera roll with Keepy.\nClean smarter. Stay private.",
+      "shortDescription": "Keepy helps you clean up your camera roll faster — without sacrificing privacy.",
+      "category": "Utilities",
+      "genres": [
+        "Utilities",
+        "Photo & Video"
+      ],
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/61/b9/c5/61b9c5f2-14d9-f9ce-a31b-f7f0f0308cdb/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ee/05/2d/ee052d4c-15d1-bedb-9a8a-3d66215dbe21/01-hero-1284x2778.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/62/2b/49/622b494d-0c20-9a64-4ba5-3cc6c791d594/02-swipe-1284x2778.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/88/a5/83/88a5837b-2c00-82d6-68c4-4e9bcb224bb5/03-groups-1284x2778.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/50/34/26/50342676-2fe0-14a7-edb2-712813136f89/04-review-bin-1284x2778.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/31/09/03/31090393-0492-bfc7-ca33-88661771b903/05-private-1284x2778.png/300x650bb-60.jpg"
+      ],
+      "appStoreUrl": "https://apps.apple.com/us/app/keepy-photo-cleaner/id6761756575?uo=4",
+      "supportUrl": "https://keepy-app.netlify.app/",
+      "price": "Free",
+      "rating": null,
+      "ratingCount": 0,
+      "version": "1.0",
+      "releaseDate": "2026-04-13T07:00:00Z",
+      "updatedAt": "2026-04-13T17:11:04Z",
+      "minimumOsVersion": "18.6"
+    },
+    {
+      "id": 6761653102,
+      "name": "ClearDays: Calendar Cleaner",
+      "subtitle": "Remove Spam Events & Invites",
+      "description": "ClearDays is a privacy-first calendar cleaner for iPhone that helps you detect calendar spam, scam invites, and suspicious event links before they waste your time.\n\nThe app scans future events on-device and flags risky patterns like phishing wording, fake alerts, and suspicious URLs. You can then review everything in one focused dashboard and clean up safely with Apple's native event editor.\n\nWhy users choose ClearDays:\n\n-Detect calendar spam and scam invites fast\n-Spot suspicious links and fake alert patterns\n-Review flagged events in a clean, focused view\n-Prioritize higher-risk events from subscribed calendars\n-Keep control with user-confirmed cleanup steps\n\nBuilt for privacy and control:\n\n-On-device analysis for core spam detection\n-No hidden background auto-deletion\n-Lightweight utility focused on one job: calendar cleanup\n-Optional one-time lifetime unlock, no subscription\nIf your calendar is filled with fake warnings, suspicious invites, or phishing-style events, ClearDays helps you clean it quickly and stay in control.",
+      "shortDescription": "ClearDays is a privacy-first calendar cleaner for iPhone that helps you detect calendar spam, scam invites, and suspicious event links before they waste your time.",
+      "category": "Utilities",
+      "genres": [
+        "Utilities",
+        "Productivity"
+      ],
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/45/aa/eb/45aaeb16-34bd-48d9-28a1-e3e20b12cb6a/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/14/e1/37/14e137ec-9945-2acb-ac23-ff06af2bec2c/01-hero-dashboard-1242x2688.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/55/4c/33/554c3314-ec1c-0921-1a1a-41a662f40618/02-privacy-local-1242x2688.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/df/61/db/df61db31-e468-adbb-a2f9-1a5d05e28cd3/03-risk-focus-1242x2688.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c1/29/78/c129787e-5dbf-feb1-0173-e071093bffde/04-native-cleanup-1242x2688.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/87/c4/14/87c414b6-bcd3-5006-76db-ad2bf5880dc1/05-guided-flow-1242x2688.png/300x650bb-60.jpg"
+      ],
+      "appStoreUrl": "https://apps.apple.com/us/app/cleardays-calendar-cleaner/id6761653102?uo=4",
+      "supportUrl": "https://cleardays-app.netlify.app/",
+      "price": "Free",
+      "rating": null,
+      "ratingCount": 0,
+      "version": "1.1",
+      "releaseDate": "2026-04-07T07:00:00Z",
+      "updatedAt": "2026-04-09T21:54:22Z",
+      "minimumOsVersion": "18.6"
+    },
+    {
+      "id": 6757859325,
+      "name": "VoltDo: Energy To-Do List",
+      "subtitle": "Plan Tasks by Battery Level",
+      "description": "VoltDo isn't just a to-do list. It's your personal energy manager.\n\nStop drowning in endless lists that only create stress. VoltDo helps you plan your tasks based on your current battery level.\n\nWHY VOLTDO? Listen to your body. Work smart, not hard. Traditional planners ignore how you feel – VoltDo puts your well-being first. Perfect for avoiding burnout and managing ADHD.\n\nKEY FEATURES:\n\n Energy Check Filter tasks by effort: \"Light\", \"Medium\", or \"Heavy\". Low on energy today? The app adapts and shows you quick wins.\n\n Focus Mode Overwhelmed? Only see what you can actually handle right now. Hide the clutter.\n\n Anti-Burnout The app actively warns you when you're overcommitting for the day.\n\n Smart Widgets See your energy status and next tasks directly on your Home Screen.\n\nDownload VoltDo now and find your flow.\n\n===\nTerms of Use: https://voltdo-terms.netlify.app",
+      "shortDescription": "VoltDo isn't just a to-do list.",
+      "category": "Productivity",
+      "genres": [
+        "Productivity",
+        "Lifestyle"
+      ],
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7f/63/28/7f6328f4-370f-0ddd-c5ce-86d6baace22f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/53/af/33/53af3317-5623-97b8-269f-4d47374336f6/01-hero-1242x2688.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/be/1f/4c/be1f4cb6-8380-8fad-3625-b93c3d82bb99/04-recharge-1242x2688.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/30/65/8b/30658bfd-f68e-9a46-637e-158e9dfaf6aa/02-energy-1242x2688.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5d/cf/d0/5dcfd036-2c8f-80f1-6d52-dbc6276b41d7/03-add-task-1242x2688.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/33/a6/67/33a66723-a07e-fac5-2461-ca4e25fc1385/06-extras-1242x2688.png/300x650bb-60.jpg"
+      ],
+      "appStoreUrl": "https://apps.apple.com/us/app/voltdo-energy-to-do-list/id6757859325?uo=4",
+      "supportUrl": "",
+      "price": "Free",
+      "rating": 5,
+      "ratingCount": 1,
+      "version": "1.2",
+      "releaseDate": "2026-01-18T08:00:00Z",
+      "updatedAt": "2026-03-28T18:48:48Z",
+      "minimumOsVersion": "26.0"
+    },
+    {
+      "id": 6759570117,
+      "name": "Verse – My Quotes",
+      "subtitle": "Save quotes. Read with focus.",
+      "description": "Verse is a calm little space for the quotes and sentences you never want to lose. Instead of endless lists of random sayings, you only keep the words that truly matter to you – from books, movies, podcasts or real‑life conversations.\nNo account, no social feed, no distractions. Verse feels like a small paper notebook dedicated just to your quotes – always with you on your iPhone.\n\nWhy Verse?\n\n-Your own quotes, not a random feed\nSave the exact lines, phrases and thoughts you care about – with source, context and tags if you like.\n\n-Everything stays on your device\nYour quotes are yours. Verse stores them locally on your iPhone. No accounts, no tracking, no hidden data sharing.\n\n\n-Capture a line in seconds\nA sentence you hear on the train, a phrase from a podcast, a thought before sleep – open Verse, type, done. Perfect when a full journal feels like too much.\n\n\n-Find quotes in seconds\nSearch your collection by words, people or topics. Even years later, you can instantly find that one line you almost forgot.\n\n\n-Minimal, distraction‑free design\nVerse is intentionally quiet: no likes, no comments, no noise. Just text – and you.\n\nHow people use Verse\n\n-Save favorite quotes from books, films and talks\n\n-Collect inspiring lines from sermons, lectures or podcasts\n\n-Keep your own phrases, tweet ideas or lyrics in one place\n\n-Store affirmations, reflections or learning notes\n\n\nAlways ready when you need it\nVerse opens fast, works offline and keeps the interface simple on purpose. If you’ve ever wished for a tiny quote app instead of a heavy notes or journal app, this is it.\nStart with a handful of quotes today – and watch your personal library of words grow over time.\n\n===\nTerms of Use: https://versequote.netlify.app/privacy.html",
+      "shortDescription": "Verse is a calm little space for the quotes and sentences you never want to lose.",
+      "category": "Reference",
+      "genres": [
+        "Reference",
+        "Productivity"
+      ],
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8f/e4/a2/8fe4a299-869a-5d9e-0dc4-22bc9b6b531f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a6/f3/58/a6f3580b-01a7-f2cc-8795-adaf1e665a81/Apple_iPhone_16_Pro_Max_Screenshot_1.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/51/cb/93/51cb9335-6dc0-e432-d546-db368dd3cf0b/Apple_iPhone_16_Pro_Max_Screenshot_2.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/dc/ee/3b/dcee3bf4-5148-c186-efa2-eff17190431b/Apple_iPhone_16_Pro_Max_Screenshot_3.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/82/fd/8b/82fd8b2d-34be-65c7-d351-15c846da0386/Apple_iPhone_16_Pro_Max_Screenshot_4.png/300x650bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5e/f2/40/5ef24069-c8d0-3ee0-57c9-b2b06c10710e/Apple_iPhone_16_Pro_Max_Screenshot_5.png/300x650bb-60.jpg"
+      ],
+      "appStoreUrl": "https://apps.apple.com/us/app/verse-my-quotes/id6759570117?uo=4",
+      "supportUrl": "https://versequote.netlify.app/",
+      "price": "Free",
+      "rating": null,
+      "ratingCount": 0,
+      "version": "1.0",
+      "releaseDate": "2026-02-25T08:00:00Z",
+      "updatedAt": "2026-02-26T02:18:33Z",
+      "minimumOsVersion": "26.2"
+    }
+  ]
+}
