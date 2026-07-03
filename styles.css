@@ -1071,8 +1071,11 @@ dd a,
   }
 
   .contact-link {
-    font-size: clamp(28px, 11vw, 44px);
-    overflow-wrap: anywhere;
+    display: block;
+    font-size: clamp(25px, 7.8vw, 34px);
+    line-height: 1.08;
+    white-space: nowrap;
+    overflow-wrap: normal;
   }
 
   .app-modal {
