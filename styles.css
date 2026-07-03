@@ -834,22 +834,49 @@ dd a,
 
 @media (max-width: 820px) {
   .site-header {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
     align-items: flex-start;
     flex-direction: column;
+    gap: 10px;
+    width: calc(100% - 24px);
+    margin: 12px auto 0;
+    padding: 12px;
   }
 
   .site-header nav {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
+    width: 100%;
+    max-width: none;
+    gap: 2px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .site-header nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-header nav a {
+    min-height: 30px;
+    flex: 0 0 auto;
   }
 
   .section {
     min-height: auto;
-    padding-top: 150px;
+    padding-top: 74px;
+    padding-bottom: 52px;
   }
 
   .hero {
-    min-height: 100vh;
+    min-height: calc(100svh - 116px);
+    align-content: center;
+    padding-top: 38px;
+    padding-bottom: 40px;
   }
 
   .hero-meta,
@@ -901,6 +928,19 @@ dd a,
     flex-direction: column;
   }
 
+  .app-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .app-row > a {
+    align-self: center;
+    min-height: 34px;
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+
   .modal-window {
     max-height: calc(100dvh - 24px);
   }
@@ -908,27 +948,197 @@ dd a,
 
 @media (max-width: 520px) {
   .site-header {
-    top: 10px;
-    left: 10px;
-    right: 10px;
+    width: calc(100% - 24px);
+    margin-top: 10px;
+    padding: 10px 10px 8px;
+  }
+
+  .brand {
+    font-size: 13px;
   }
 
   .site-header nav a {
-    padding: 0 8px;
+    min-height: 28px;
+    padding: 0 7px;
     font-size: 12px;
   }
 
   h1 {
-    font-size: clamp(42px, 11vw, 54px);
+    font-size: clamp(40px, 13vw, 58px);
+    white-space: normal;
   }
 
   .section {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 58px 20px 46px;
+  }
+
+  .hero {
+    min-height: calc(100svh - 104px);
+    gap: 26px;
+    align-content: center;
+    padding-top: 24px;
+    padding-bottom: 34px;
   }
 
   .hero-copy {
-    padding-top: 90px;
+    padding-top: 0;
+  }
+
+  .eyebrow {
+    margin-bottom: 12px;
+    font-size: 11px;
+  }
+
+  .lede {
+    font-size: 22px;
+  }
+
+  .hero-meta div {
+    min-height: 74px;
+    padding: 14px;
+  }
+
+  .hero-meta strong {
+    margin-top: 12px;
+  }
+
+  .section-body h2 {
+    margin-bottom: 16px;
+    font-size: clamp(38px, 12vw, 56px);
+    line-height: 1;
+  }
+
+  .section-body > p,
+  .split p,
+  .legal-grid p {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .app-grid {
+    margin-top: 28px;
+  }
+
+  .app-card {
+    padding: 14px;
+  }
+
+  .app-open {
+    min-height: 0;
+  }
+
+  .app-icon-img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 28px;
+    border-radius: 16px;
+  }
+
+  .app-card h3 {
+    font-size: 24px;
+  }
+
+  .app-row {
+    padding: 12px 0;
+  }
+
+  .app-row-main {
+    grid-template-columns: 54px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .app-row-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 13px;
+  }
+
+  .app-row strong {
+    font-size: 17px;
+  }
+
+  .app-row small {
+    font-size: 13px;
+  }
+
+  .app-row > a {
+    font-size: 12px;
+  }
+
+  .contact-panel,
+  .legal-grid article {
+    padding: 20px;
+  }
+
+  .contact-link {
+    font-size: clamp(28px, 11vw, 44px);
+    overflow-wrap: anywhere;
+  }
+
+  .app-modal {
+    align-items: start;
+    padding: 10px;
+  }
+
+  .modal-window {
+    width: 100%;
+    max-height: calc(100dvh - 20px);
+    background: #07090b;
+  }
+
+  .modal-header {
+    gap: 10px;
+    padding: 8px;
+  }
+
+  .modal-title-block {
+    gap: 10px;
+  }
+
+  .modal-title-block img {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+  }
+
+  .modal-title-block h2 {
+    font-size: clamp(18px, 5.6vw, 23px);
+    line-height: 1.04;
+  }
+
+  .modal-title-block p {
+    font-size: 13px;
+  }
+
+  .modal-close {
+    width: 32px;
+    height: 32px;
+  }
+
+  .modal-content {
+    gap: 18px;
+    padding: 16px;
+  }
+
+  .modal-copy p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .modal-actions {
+    margin-top: 18px;
+  }
+
+  .modal-screenshots img {
+    border-radius: 14px;
+  }
+
+  .legal-page {
+    padding: 56px 18px 64px;
+  }
+
+  .legal-document h2 {
+    margin-top: 32px;
   }
 
   .site-footer {
