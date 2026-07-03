@@ -415,6 +415,7 @@ function renderFeatured(apps, root) {
 
 function renderAllApps(apps, root) {
   root.innerHTML = apps.map((app) => appRow(app)).join("");
+  preloadAppImages(apps);
 }
 
 function appCard(app) {
@@ -435,7 +436,7 @@ function appRow(app) {
   return `
     <article class="app-row">
       <button type="button" class="app-row-main" data-app-id="${app.id}" aria-label="Open ${escapeAttr(app.name)} details">
-        <img class="app-row-icon" src="${escapeAttr(cachedImageUrl(app.icon))}" alt="${escapeAttr(app.name)} icon" loading="lazy" />
+        <img class="app-row-icon" src="${escapeAttr(cachedImageUrl(app.icon))}" alt="${escapeAttr(app.name)} icon" loading="eager" decoding="async" />
         <span>
           <strong>${escapeHtml(app.name)}</strong>
           <small>${escapeHtml(app.subtitle || app.shortDescription || app.category || "iOS App")}</small>
