@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080a0d" />
+    <title>App Privacy - hoppedev.app</title>
+    <meta name="description" content="App privacy overview for apps published by hoppedev.app." />
+    <link rel="canonical" href="https://hoppedev.app/app-privacy.html" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="hoppedev.app home"><span>hoppedev.app</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html#apps">Apps</a>
+        <a href="index.html#all-apps">All Apps</a>
+        <a href="imprint.html">Imprint</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <main class="legal-page">
+      <section class="legal-document">
+        <p class="eyebrow">iOS apps</p>
+        <h1>App Privacy</h1>
+        <p class="legal-intro">
+          This page summarizes general privacy principles for apps listed on hoppedev.app. App
+          Store product pages and in-app privacy screens may contain additional app-specific
+          details.
+        </p>
+
+        <article>
+          <h2>General Principles</h2>
+          <p>
+            The apps are designed to process data locally on the user's device where possible.
+            Several apps handle sensitive user content such as photos, documents, voice notes,
+            calendar information or inventory data. The exact processing depends on the app and
+            the permissions granted by the user in iOS.
+          </p>
+        </article>
+
+        <article>
+          <h2>iOS Permissions</h2>
+          <p>
+            Apps may request access to iOS features such as Photos, Camera, Microphone, Speech
+            Recognition, Calendar, Files or Notifications. Access is only available after the user
+            grants the corresponding iOS permission. Permissions can be changed later in iOS
+            Settings.
+          </p>
+        </article>
+
+        <article>
+          <h2>Local Processing</h2>
+          <p>
+            Where an app states that processing is local or private, user content is intended to
+            remain on the device unless the user explicitly exports, shares or stores it through an
+            Apple system service or another third-party service.
+          </p>
+        </article>
+
+        <article>
+          <h2>Purchases</h2>
+          <p>
+            Paid downloads, subscriptions and in-app purchases are handled by Apple. Apple
+            processes purchase, billing and subscription information under Apple's own terms and
+            privacy policy.
+          </p>
+        </article>
+
+        <article>
+          <h2>Support</h2>
+          <p>
+            For privacy questions about a specific app, contact
+            <a href="mailto:hello@hoppedev.app">hello@hoppedev.app</a> and include the app name.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Copyright <span id="year"></span> hoppedev.app. All rights reserved.</p>
+      <nav aria-label="Legal footer navigation">
+        <a href="imprint.html">Imprint</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="index.html">Home</a>
+      </nav>
+    </footer>
+    <script>
+      document.querySelector("#year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

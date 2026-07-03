@@ -332,31 +332,42 @@ async function loadApps() {
     appState.apps = data.apps || [];
     renderFeatured(data.featured?.length ? data.featured : appState.apps.slice(0, 3), featuredRoot);
     renderAllApps(appState.apps, allRoot);
+    updateHeroLatest(appState.apps);
     updateHeroStatus(appState.apps.length);
   } catch (error) {
     featuredRoot.innerHTML = `<p class="loading-copy">App Store apps could not be loaded right now.</p>`;
     allRoot.innerHTML = "";
+    updateHeroLatest([]);
+    updateHeroStatus(0);
     console.error(error);
   }
 }
 
 async function fetchApps() {
-  if (!(location.hostname === "localhost" && location.port === "4173")) {
-    try {
-      const response = await fetch("/api/apps", { headers: { accept: "application/json" } });
-      if (response.ok) return response.json();
-    } catch {
-      // Local/static previews without Netlify Functions fall back to Apple's public lookup API.
-    }
+  try {
+    const response = await fetch("/api/apps", { headers: { accept: "application/json" } });
+    if (response.ok) return response.json();
+  } catch {
+    // Local/static previews without Netlify Functions fall back to Apple's public lookup API.
+  }
+
+  try {
+    return await fetchAppleLookupApps();
+  } catch {
+    // If Apple's public lookup API is unavailable, use the checked-in snapshot as a last resort.
   }
 
   try {
     const response = await fetch("/data/apps.json", { headers: { accept: "application/json" } });
     if (response.ok) return response.json();
   } catch {
-    // The checked-in snapshot is optional; direct Apple lookup below is the final fallback.
+    // The checked-in snapshot is optional.
   }
 
+  throw new Error("No App Store catalog source responded");
+}
+
+async function fetchAppleLookupApps() {
   const response = await fetch("https://itunes.apple.com/lookup?id=1869099620&entity=software&country=us&limit=200");
   if (!response.ok) throw new Error("Apple lookup failed");
   const payload = await response.json();
@@ -383,7 +394,16 @@ async function fetchApps() {
       minimumOsVersion: app.minimumOsVersion || "",
     }));
 
-  return { apps, featured: apps.slice(0, 3) };
+  return {
+    developer: {
+      id: 1869099620,
+      name: "Johanna Hoppe",
+      url: "https://apps.apple.com/us/developer/johanna-hoppe/id1869099620",
+    },
+    updatedAt: new Date().toISOString(),
+    featured: apps.slice(0, 3),
+    apps,
+  };
 }
 
 function renderFeatured(apps, root) {
@@ -477,7 +497,38 @@ function closeModal() {
 function updateHeroStatus(count) {
   const status = [...document.querySelectorAll(".hero-meta div")].find((item) => item.querySelector("span")?.textContent === "Status");
   const strong = status?.querySelector("strong");
-  if (strong && count) strong.textContent = `${count} App Store apps`;
+  if (!strong) return;
+  strong.textContent = count
+    ? `${count} live App Store ${count === 1 ? "app" : "apps"}`
+    : "No live App Store apps";
+}
+
+function updateHeroLatest(apps) {
+  const latest = [...apps]
+    .filter((app) => app.updatedAt || app.releaseDate)
+    .sort((a, b) => new Date(b.updatedAt || b.releaseDate) - new Date(a.updatedAt || a.releaseDate))[0];
+  const latestTile = [...document.querySelectorAll(".hero-meta div")].find((item) => item.querySelector("span")?.textContent === "Latest update");
+  const strong = latestTile?.querySelector("strong");
+  if (!strong) return;
+  strong.textContent = latest ? compactAppName(latest.name) : "No release data";
+  if (latest?.updatedAt || latest?.releaseDate) {
+    strong.title = `${latest.name} - ${formatReleaseDate(latest.updatedAt || latest.releaseDate)}`;
+  }
+}
+
+function compactAppName(name = "") {
+  return String(name)
+    .replace(/\s*[:–-]\s*.*/, "")
+    .trim()
+    .slice(0, 28) || "Latest app";
+}
+
+function formatReleaseDate(value) {
+  return new Intl.DateTimeFormat("en", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  }).format(new Date(value));
 }
 
 function subtitleFromName(name = "") {

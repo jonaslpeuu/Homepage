@@ -21,7 +21,7 @@
     <script type="importmap">
       {
         "imports": {
-          "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js"
+          "three": "./vendor/three.module.js"
         }
       }
     </script>
@@ -36,7 +36,8 @@
         <a href="#all-apps">All Apps</a>
         <a href="#studio">Studio</a>
         <a href="#contact">Contact</a>
-        <a href="#legal">Legal</a>
+        <a href="imprint.html">Imprint</a>
+        <a href="privacy.html">Privacy</a>
       </nav>
     </header>
 
@@ -54,8 +55,8 @@
         </div>
         <div class="hero-meta" aria-label="Site details">
           <div>
-            <span>Domain</span>
-            <strong>hoppedev.app</strong>
+            <span>Latest update</span>
+            <strong>Checking releases</strong>
           </div>
           <div>
             <span>Platform</span>
@@ -63,7 +64,7 @@
           </div>
           <div>
             <span>Status</span>
-            <strong>First apps coming soon</strong>
+            <strong>Syncing App Store</strong>
           </div>
         </div>
       </section>
@@ -142,38 +143,43 @@
           <article>
             <h2>Imprint</h2>
             <p>
-              Information according to Sec. 5 German Digital Services Act will be added here once
-              the final business details are available.
+              Information according to Sec. 5 German Digital Services Act for hoppedev.app.
             </p>
             <dl>
               <div>
                 <dt>Responsible person</dt>
-                <dd>To be added</dd>
+                <dd>Johanna Hoppe</dd>
               </div>
               <div>
                 <dt>Address</dt>
-                <dd>To be added</dd>
+                <dd>Baccumer Str. 19<br />49808 Lingen<br />Germany</dd>
               </div>
               <div>
                 <dt>Email</dt>
                 <dd><a href="mailto:hello@hoppedev.app">hello@hoppedev.app</a></dd>
               </div>
               <div>
-                <dt>VAT ID</dt>
-                <dd>To be added if applicable</dd>
+                <dt>Phone</dt>
+                <dd><a href="tel:+4915679508182">+49 156 79508182</a></dd>
+              </div>
+              <div>
+                <dt>Business type</dt>
+                <dd>Sole proprietor. Not registered in the commercial register.</dd>
               </div>
             </dl>
+            <a class="legal-link" href="imprint.html">Full imprint</a>
           </article>
           <article>
             <h2>Privacy</h2>
             <p>
-              This first static version does not set cookies, does not include analytics, and does
-              not process form submissions. If you send an email, your email app and mail provider
-              handle that communication.
+              The website is hosted on Netlify, does not use analytics or advertising cookies, and
+              loads App Store data and media from Apple.
             </p>
             <p>
-              App-specific privacy policies will be linked from each product card before release.
+              App-specific privacy notes are available separately.
             </p>
+            <a class="legal-link" href="privacy.html">Privacy policy</a>
+            <a class="legal-link" href="app-privacy.html">App privacy</a>
           </article>
         </div>
       </section>
@@ -181,7 +187,12 @@
 
     <footer class="site-footer">
       <p>Copyright <span id="year"></span> hoppedev.app. All rights reserved.</p>
-      <a href="#top">Back to top</a>
+      <nav aria-label="Legal footer navigation">
+        <a href="imprint.html">Imprint</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="app-privacy.html">App Privacy</a>
+        <a href="#top">Back to top</a>
+      </nav>
     </footer>
 
     <div class="app-modal" id="app-modal" aria-hidden="true">

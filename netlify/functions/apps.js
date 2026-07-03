@@ -8,12 +8,12 @@ const FEATURED_IDS = (process.env.FEATURED_APP_IDS || "")
 
 let cache = null;
 let cacheTime = 0;
-const CACHE_TTL_MS = 1000 * 60 * 60 * 6;
+const CACHE_TTL_MS = 1000 * 60 * 30;
 
 exports.handler = async () => {
   try {
     if (cache && Date.now() - cacheTime < CACHE_TTL_MS) {
-      return json(cache, 200, "public, max-age=600, s-maxage=21600");
+      return json(cache, 200, "public, max-age=300, s-maxage=1800");
     }
 
     const lookup = await fetchJson(LOOKUP_URL);
@@ -63,7 +63,7 @@ exports.handler = async () => {
 
     cache = payload;
     cacheTime = Date.now();
-    return json(payload, 200, "public, max-age=600, s-maxage=21600");
+    return json(payload, 200, "public, max-age=300, s-maxage=1800");
   } catch (error) {
     return json({ error: "Could not load App Store apps.", detail: error.message }, 502, "no-store");
   }
