@@ -410,19 +410,21 @@ async function fetchAppleLookupApps() {
 
 function renderFeatured(apps, root) {
   root.innerHTML = apps.map((app) => appCard(app, true)).join("");
-  preloadAppImages(apps);
+  preloadAppIcons(apps);
+  preloadAppScreenshotsLater(apps);
 }
 
 function renderAllApps(apps, root) {
   root.innerHTML = apps.map((app) => appRow(app)).join("");
-  preloadAppImages(apps);
+  preloadAppIcons(apps);
+  preloadAppScreenshotsLater(apps);
 }
 
 function appCard(app) {
   return `
     <article class="app-card live-app-card">
       <button type="button" class="app-open" data-app-id="${app.id}" aria-label="Open ${escapeAttr(app.name)} details">
-        <img class="app-icon-img" src="${escapeAttr(cachedImageUrl(app.icon))}" alt="${escapeAttr(app.name)} icon" loading="lazy" />
+        <img class="app-icon-img" src="${escapeAttr(cachedImageUrl(app.icon))}" alt="${escapeAttr(app.name)} icon" loading="eager" decoding="async" fetchpriority="high" />
         <p class="app-kicker">${escapeHtml(app.category || "iOS App")}</p>
         <h3>${escapeHtml(app.name)}</h3>
         <p>${escapeHtml(app.shortDescription || app.subtitle || "Available on the App Store.")}</p>
@@ -436,7 +438,7 @@ function appRow(app) {
   return `
     <article class="app-row">
       <button type="button" class="app-row-main" data-app-id="${app.id}" aria-label="Open ${escapeAttr(app.name)} details">
-        <img class="app-row-icon" src="${escapeAttr(cachedImageUrl(app.icon))}" alt="${escapeAttr(app.name)} icon" loading="eager" decoding="async" />
+        <img class="app-row-icon" src="${escapeAttr(cachedImageUrl(app.icon))}" alt="${escapeAttr(app.name)} icon" loading="eager" decoding="async" fetchpriority="high" />
         <span>
           <strong>${escapeHtml(app.name)}</strong>
           <small>${escapeHtml(app.subtitle || app.shortDescription || app.category || "iOS App")}</small>
@@ -489,7 +491,8 @@ function openModal(app) {
   modal.setAttribute("aria-hidden", "false");
   document.body.classList.add("modal-open");
   document.querySelector(".modal-close")?.focus();
-  preloadAppImages([app]);
+  preloadAppIcons([app]);
+  preloadImages((app.screenshots || []).slice(0, 3).map(cachedImageUrl));
 }
 
 function closeModal() {
@@ -514,16 +517,32 @@ function cachedImageUrl(src) {
   return `/api/app-image?src=${encodeURIComponent(src)}`;
 }
 
-function preloadAppImages(apps) {
-  const urls = [
-    ...new Set(
-      apps
-        .flatMap((app) => [app.icon, ...(app.screenshots || []).slice(0, 3)])
-        .filter(Boolean)
-        .map(cachedImageUrl),
-    ),
-  ];
+function preloadAppIcons(apps) {
+  preloadImages(apps.map((app) => app.icon).filter(Boolean).map(cachedImageUrl));
+}
+
+function preloadAppScreenshotsLater(apps) {
+  const urls = apps
+    .flatMap((app) => (app.screenshots || []).slice(0, 3))
+    .filter(Boolean)
+    .map(cachedImageUrl);
+
+  const schedule = window.requestIdleCallback || ((callback) => window.setTimeout(callback, 1200));
+  schedule(() => preloadImages(urls), { timeout: 3000 });
+}
+
+function preloadImages(urls) {
+  [...new Set(urls)].forEach((url) => {
+    if (!url) return;
+    const link = document.createElement("link");
+    link.rel = "preload";
+    link.as = "image";
+    link.href = url;
+    document.head.appendChild(link);
+  });
+
   urls.forEach((url) => {
+    if (!url) return;
     const image = new Image();
     image.decoding = "async";
     image.src = url;
