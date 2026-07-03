@@ -332,20 +332,21 @@ async function loadApps() {
     appState.apps = data.apps || [];
     renderFeatured(data.featured?.length ? data.featured : appState.apps.slice(0, 3), featuredRoot);
     renderAllApps(appState.apps, allRoot);
-    updateHeroLatest(appState.apps);
-    updateHeroStatus(appState.apps.length);
+    updateHeroStats(data.stats, appState.apps);
   } catch (error) {
     featuredRoot.innerHTML = `<p class="loading-copy">App Store apps could not be loaded right now.</p>`;
     allRoot.innerHTML = "";
-    updateHeroLatest([]);
-    updateHeroStatus(0);
+    updateHeroStats(null, []);
     console.error(error);
   }
 }
 
 async function fetchApps() {
   try {
-    const response = await fetch("/api/apps", { headers: { accept: "application/json" } });
+    const response = await fetch("/api/apps", {
+      credentials: "omit",
+      headers: { accept: "application/json" },
+    });
     if (response.ok) return response.json();
   } catch {
     // Local/static previews without Netlify Functions fall back to Apple's public lookup API.
@@ -401,6 +402,7 @@ async function fetchAppleLookupApps() {
       url: "https://apps.apple.com/us/developer/johanna-hoppe/id1869099620",
     },
     updatedAt: new Date().toISOString(),
+    stats: buildStats(apps),
     featured: apps.slice(0, 3),
     apps,
   };
@@ -503,17 +505,38 @@ function updateHeroStatus(count) {
     : "No live App Store apps";
 }
 
-function updateHeroLatest(apps) {
-  const latest = [...apps]
-    .filter((app) => app.updatedAt || app.releaseDate)
-    .sort((a, b) => new Date(b.updatedAt || b.releaseDate) - new Date(a.updatedAt || a.releaseDate))[0];
+function updateHeroStats(stats, apps) {
+  const fallbackStats = stats || buildStats(apps);
+  updateHeroLatest(fallbackStats.latestUpdate);
+  updateHeroStatus(fallbackStats.liveAppCount || 0);
+}
+
+function updateHeroLatest(latestUpdate) {
   const latestTile = [...document.querySelectorAll(".hero-meta div")].find((item) => item.querySelector("span")?.textContent === "Latest update");
   const strong = latestTile?.querySelector("strong");
   if (!strong) return;
-  strong.textContent = latest ? compactAppName(latest.name) : "No release data";
-  if (latest?.updatedAt || latest?.releaseDate) {
-    strong.title = `${latest.name} - ${formatReleaseDate(latest.updatedAt || latest.releaseDate)}`;
+  strong.textContent = latestUpdate ? latestUpdate.compactName : "No release data";
+  if (latestUpdate?.date) {
+    strong.title = `${latestUpdate.appName} - ${formatReleaseDate(latestUpdate.date)}`;
   }
+}
+
+function buildStats(apps) {
+  const latestUpdate = [...apps]
+    .filter((app) => app.updatedAt || app.releaseDate)
+    .sort((a, b) => new Date(b.updatedAt || b.releaseDate) - new Date(a.updatedAt || a.releaseDate))[0];
+
+  return {
+    liveAppCount: apps.length,
+    latestUpdate: latestUpdate
+      ? {
+          appId: latestUpdate.id,
+          appName: latestUpdate.name,
+          compactName: compactAppName(latestUpdate.name),
+          date: latestUpdate.updatedAt || latestUpdate.releaseDate,
+        }
+      : null,
+  };
 }
 
 function compactAppName(name = "") {

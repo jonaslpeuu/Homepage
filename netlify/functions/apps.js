@@ -9,11 +9,12 @@ const FEATURED_IDS = (process.env.FEATURED_APP_IDS || "")
 let cache = null;
 let cacheTime = 0;
 const CACHE_TTL_MS = 1000 * 60 * 30;
+const CACHE_CONTROL = "public, max-age=300, s-maxage=1800, stale-while-revalidate=86400";
 
 exports.handler = async () => {
   try {
     if (cache && Date.now() - cacheTime < CACHE_TTL_MS) {
-      return json(cache, 200, "public, max-age=300, s-maxage=1800");
+      return json(cache, 200, CACHE_CONTROL);
     }
 
     const lookup = await fetchJson(LOOKUP_URL);
@@ -57,13 +58,14 @@ exports.handler = async () => {
         url: `https://apps.apple.com/${COUNTRY}/developer/johanna-hoppe/id${DEVELOPER_ID}`,
       },
       updatedAt: new Date().toISOString(),
+      stats: buildStats(apps),
       featured,
       apps,
     };
 
     cache = payload;
     cacheTime = Date.now();
-    return json(payload, 200, "public, max-age=300, s-maxage=1800");
+    return json(payload, 200, CACHE_CONTROL);
   } catch (error) {
     return json({ error: "Could not load App Store apps.", detail: error.message }, 502, "no-store");
   }
@@ -125,6 +127,31 @@ function selectFeatured(apps) {
     return uniqueById([...prioritized, ...apps]).slice(0, 3);
   }
   return apps.slice(0, 3);
+}
+
+function buildStats(apps) {
+  const latestUpdate = [...apps]
+    .filter((app) => app.updatedAt || app.releaseDate)
+    .sort((a, b) => new Date(b.updatedAt || b.releaseDate) - new Date(a.updatedAt || a.releaseDate))[0];
+
+  return {
+    liveAppCount: apps.length,
+    latestUpdate: latestUpdate
+      ? {
+          appId: latestUpdate.id,
+          appName: latestUpdate.name,
+          compactName: compactAppName(latestUpdate.name),
+          date: latestUpdate.updatedAt || latestUpdate.releaseDate,
+        }
+      : null,
+  };
+}
+
+function compactAppName(name = "") {
+  return String(name)
+    .replace(/\s*[:–-]\s*.*/, "")
+    .trim()
+    .slice(0, 28) || "Latest app";
 }
 
 function unique(items) {
