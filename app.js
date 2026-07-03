@@ -474,7 +474,8 @@ function openModal(app) {
   const description = document.querySelector("#modal-description");
   const storeLink = document.querySelector("#modal-store-link");
   const screenshots = document.querySelector("#modal-screenshots");
-  if (!modal || !icon || !title || !subtitle || !description || !storeLink || !screenshots) return;
+  const content = document.querySelector(".modal-content");
+  if (!modal || !icon || !title || !subtitle || !description || !storeLink || !screenshots || !content) return;
 
   icon.src = cachedImageUrl(app.icon);
   icon.alt = `${app.name} icon`;
@@ -490,6 +491,7 @@ function openModal(app) {
 
   modal.setAttribute("aria-hidden", "false");
   document.body.classList.add("modal-open");
+  content.scrollTop = 0;
   document.querySelector(".modal-close")?.focus();
   preloadAppIcons([app]);
   preloadImages((app.screenshots || []).slice(0, 3).map(cachedImageUrl));
