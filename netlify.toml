@@ -6,3 +6,8 @@
   from = "/api/apps"
   to = "/.netlify/functions/apps"
   status = 200
+
+[[redirects]]
+  from = "/api/app-image"
+  to = "/.netlify/functions/app-image"
+  status = 200

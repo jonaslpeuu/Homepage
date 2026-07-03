@@ -410,6 +410,7 @@ async function fetchAppleLookupApps() {
 
 function renderFeatured(apps, root) {
   root.innerHTML = apps.map((app) => appCard(app, true)).join("");
+  preloadAppImages(apps);
 }
 
 function renderAllApps(apps, root) {
@@ -420,7 +421,7 @@ function appCard(app) {
   return `
     <article class="app-card live-app-card">
       <button type="button" class="app-open" data-app-id="${app.id}" aria-label="Open ${escapeAttr(app.name)} details">
-        <img class="app-icon-img" src="${escapeAttr(app.icon)}" alt="${escapeAttr(app.name)} icon" loading="lazy" />
+        <img class="app-icon-img" src="${escapeAttr(cachedImageUrl(app.icon))}" alt="${escapeAttr(app.name)} icon" loading="lazy" />
         <p class="app-kicker">${escapeHtml(app.category || "iOS App")}</p>
         <h3>${escapeHtml(app.name)}</h3>
         <p>${escapeHtml(app.shortDescription || app.subtitle || "Available on the App Store.")}</p>
@@ -434,7 +435,7 @@ function appRow(app) {
   return `
     <article class="app-row">
       <button type="button" class="app-row-main" data-app-id="${app.id}" aria-label="Open ${escapeAttr(app.name)} details">
-        <img class="app-row-icon" src="${escapeAttr(app.icon)}" alt="${escapeAttr(app.name)} icon" loading="lazy" />
+        <img class="app-row-icon" src="${escapeAttr(cachedImageUrl(app.icon))}" alt="${escapeAttr(app.name)} icon" loading="lazy" />
         <span>
           <strong>${escapeHtml(app.name)}</strong>
           <small>${escapeHtml(app.subtitle || app.shortDescription || app.category || "iOS App")}</small>
@@ -472,7 +473,7 @@ function openModal(app) {
   const screenshots = document.querySelector("#modal-screenshots");
   if (!modal || !icon || !title || !subtitle || !description || !storeLink || !screenshots) return;
 
-  icon.src = app.icon;
+  icon.src = cachedImageUrl(app.icon);
   icon.alt = `${app.name} icon`;
   title.textContent = app.name;
   subtitle.textContent = app.subtitle || app.category || "iOS App";
@@ -481,12 +482,13 @@ function openModal(app) {
 
   const shots = app.screenshots?.slice(0, 3) || [];
   screenshots.innerHTML = shots.length
-    ? shots.map((src, index) => `<img src="${escapeAttr(src)}" alt="${escapeAttr(app.name)} screenshot ${index + 1}" loading="lazy" />`).join("")
-    : `<div class="screenshot-fallback"><img src="${escapeAttr(app.icon)}" alt="" /><span>Screenshots load from the App Store when available.</span></div>`;
+    ? shots.map((src, index) => `<img src="${escapeAttr(cachedImageUrl(src))}" alt="${escapeAttr(app.name)} screenshot ${index + 1}" loading="eager" />`).join("")
+    : `<div class="screenshot-fallback"><img src="${escapeAttr(cachedImageUrl(app.icon))}" alt="" /><span>Screenshots load from the App Store when available.</span></div>`;
 
   modal.setAttribute("aria-hidden", "false");
   document.body.classList.add("modal-open");
   document.querySelector(".modal-close")?.focus();
+  preloadAppImages([app]);
 }
 
 function closeModal() {
@@ -503,6 +505,28 @@ function updateHeroStatus(count) {
   strong.textContent = count
     ? `${count} live App Store ${count === 1 ? "app" : "apps"}`
     : "No live App Store apps";
+}
+
+function cachedImageUrl(src) {
+  if (!src) return "";
+  if (location.hostname === "localhost" || location.hostname === "127.0.0.1") return src;
+  return `/api/app-image?src=${encodeURIComponent(src)}`;
+}
+
+function preloadAppImages(apps) {
+  const urls = [
+    ...new Set(
+      apps
+        .flatMap((app) => [app.icon, ...(app.screenshots || []).slice(0, 3)])
+        .filter(Boolean)
+        .map(cachedImageUrl),
+    ),
+  ];
+  urls.forEach((url) => {
+    const image = new Image();
+    image.decoding = "async";
+    image.src = url;
+  });
 }
 
 function updateHeroStats(stats, apps) {
