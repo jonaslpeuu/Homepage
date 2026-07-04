@@ -18,7 +18,8 @@
     <meta property="og:url" content="https://hoppedev.app" />
     <link rel="canonical" href="https://hoppedev.app" />
     <link rel="preload" href="/api/apps" as="fetch" type="application/json" crossorigin="anonymous" />
-    <link rel="stylesheet" href="styles.css?v=20260703-mobile-email" />
+    <link rel="modulepreload" href="vendor/three.module.js" />
+    <link rel="stylesheet" href="styles.css?v=20260704-fog-fast" />
     <script type="importmap">
       {
         "imports": {
@@ -44,6 +45,7 @@
 
     <main id="top">
       <section class="hero section">
+        <div class="hero-scene-placeholder" aria-hidden="true"></div>
         <canvas id="scene" aria-hidden="true"></canvas>
         <div class="grain" aria-hidden="true"></div>
         <div class="hero-copy">
@@ -223,6 +225,6 @@
       </section>
     </div>
 
-    <script type="module" src="app.js?v=20260703-list-icons"></script>
+    <script type="module" src="app.js?v=20260704-fog-fast"></script>
   </body>
 </html>

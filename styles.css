@@ -74,6 +74,65 @@ button:focus-visible {
   transform: translateX(-50%);
   z-index: 0;
   background: radial-gradient(circle at 60% 40%, #232825 0%, #0b0d0f 52%, #030405 100%);
+  opacity: 0;
+  transition: opacity 420ms ease-out;
+}
+
+.hero.scene-ready #scene {
+  opacity: var(--scene-opacity, 1);
+}
+
+.hero-scene-placeholder {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(233, 243, 247, 0.82) 34%, rgba(232, 242, 246, 0.66) 64%, rgba(8, 10, 13, 0.5) 100%),
+    repeating-linear-gradient(
+      92deg,
+      transparent 0 22px,
+      rgba(42, 103, 156, 0.72) 22px 30px,
+      rgba(151, 190, 211, 0.54) 30px 41px,
+      transparent 41px 72px
+    ),
+    radial-gradient(circle at 52% 36%, rgba(255, 255, 255, 0.92), rgba(195, 223, 236, 0.62) 34%, rgba(42, 103, 156, 0.3) 72%);
+  transform: translateZ(0);
+  transition: opacity 520ms ease-out;
+}
+
+.hero-scene-placeholder::before,
+.hero-scene-placeholder::after {
+  position: absolute;
+  inset: -8% -4%;
+  content: "";
+  pointer-events: none;
+}
+
+.hero-scene-placeholder::before {
+  opacity: 0.78;
+  background:
+    linear-gradient(90deg, transparent 0 7%, rgba(34, 92, 148, 0.52) 7% 8.5%, transparent 8.5% 13%),
+    linear-gradient(90deg, transparent 0 17%, rgba(103, 153, 190, 0.48) 17% 19.5%, transparent 19.5% 26%),
+    linear-gradient(90deg, transparent 0 31%, rgba(28, 78, 130, 0.58) 31% 33%, transparent 33% 41%),
+    linear-gradient(90deg, transparent 0 48%, rgba(114, 167, 204, 0.52) 48% 50%, transparent 50% 59%),
+    linear-gradient(90deg, transparent 0 66%, rgba(37, 99, 158, 0.54) 66% 68%, transparent 68% 76%),
+    linear-gradient(90deg, transparent 0 84%, rgba(117, 169, 204, 0.5) 84% 86%, transparent 86% 100%);
+  mask-image: linear-gradient(to bottom, black 0%, black 74%, transparent 100%);
+}
+
+.hero-scene-placeholder::after {
+  opacity: 0.92;
+  background:
+    radial-gradient(ellipse at 50% 42%, rgba(255, 255, 255, 0.96) 0 24%, rgba(255, 255, 255, 0.76) 36%, transparent 58%),
+    radial-gradient(ellipse at 25% 62%, rgba(255, 255, 255, 0.74) 0 20%, transparent 44%),
+    radial-gradient(ellipse at 74% 18%, rgba(255, 255, 255, 0.62) 0 18%, transparent 42%),
+    linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.54) 38%, rgba(8, 10, 13, 0.32) 100%);
+  filter: blur(0.2px);
+}
+
+.hero.scene-ready .hero-scene-placeholder {
+  opacity: 0;
 }
 
 .grain {

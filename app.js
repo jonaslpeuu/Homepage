@@ -262,8 +262,8 @@ let targetScroll = 0;
 function updateScroll() {
   const heroHeight = hero?.offsetHeight || window.innerHeight;
   targetScroll = Math.min(window.scrollY / heroHeight, 1);
-  if (canvas) {
-    canvas.style.opacity = `${Math.max(0, 1 - targetScroll * 1.35)}`;
+  if (hero) {
+    hero.style.setProperty("--scene-opacity", `${Math.max(0, 1 - targetScroll * 1.35)}`);
   }
 }
 
@@ -286,6 +286,7 @@ resize();
 updateScroll();
 
 const clock = new THREE.Clock();
+let hasRenderedScene = false;
 
 function animate() {
   const elapsed = clock.getElapsedTime();
@@ -317,6 +318,10 @@ function animate() {
   camera.position.y = 24 - scrollProgress * 1.2;
   camera.lookAt(0, 0, 0);
   renderer.render(scene, camera);
+  if (!hasRenderedScene) {
+    hasRenderedScene = true;
+    hero?.classList.add("scene-ready");
+  }
   requestAnimationFrame(animate);
 }
 
