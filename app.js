@@ -110,6 +110,7 @@ setupModal();
 const canvas = document.querySelector("#scene");
 const hero = document.querySelector(".hero");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const mobileScene = window.matchMedia("(max-width: 520px)");
 const fogShaders = [];
 const fogSettings = {
   density: 0.28,
@@ -151,7 +152,7 @@ scene.background = new THREE.Color(0xf6f8f6);
 
 const camera = new THREE.OrthographicCamera(-10, 10, 6, -6, 0.1, 120);
 camera.position.set(-32, 24, 32);
-camera.zoom = 1.08;
+camera.zoom = mobileScene.matches ? 1.2 : 1.08;
 camera.updateProjectionMatrix();
 
 const group = new THREE.Group();
@@ -272,10 +273,12 @@ function resize() {
   const width = Math.max(1, Math.round(rect?.width || window.innerWidth));
   const height = Math.max(1, Math.round(rect?.height || window.innerHeight));
   const aspect = width / height;
-  camera.left = -13.8 * aspect;
-  camera.right = 13.8 * aspect;
-  camera.top = 13.8;
-  camera.bottom = -13.8;
+  const viewSize = mobileScene.matches ? 12.3 : 13.8;
+  camera.left = -viewSize * aspect;
+  camera.right = viewSize * aspect;
+  camera.top = viewSize;
+  camera.bottom = -viewSize;
+  camera.zoom = mobileScene.matches ? 1.2 : 1.08;
   camera.updateProjectionMatrix();
   renderer.setSize(width, height, false);
 }
@@ -313,9 +316,9 @@ function animate() {
     child.position.y = child.userData.baseY + Math.sin(elapsed * child.userData.drift) * 0.28 * motionScale;
   });
 
-  camera.position.x = -32 + scrollProgress * 2;
-  camera.position.z = 32 - scrollProgress * 2;
-  camera.position.y = 24 - scrollProgress * 1.2;
+  camera.position.x = (mobileScene.matches ? -28 : -32) + scrollProgress * 2;
+  camera.position.z = (mobileScene.matches ? 29 : 32) - scrollProgress * 2;
+  camera.position.y = (mobileScene.matches ? 21 : 24) - scrollProgress * 1.2;
   camera.lookAt(0, 0, 0);
   renderer.render(scene, camera);
   if (!hasRenderedScene) {
