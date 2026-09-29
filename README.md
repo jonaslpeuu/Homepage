@@ -19,4 +19,4 @@ Then open `http://localhost:4173`.
 - App Store images are proxied through `netlify/functions/app-image.js` on Netlify and cached for 2 days with stale revalidation.
 - `netlify/functions/warm-app-cache.mjs` warms the app/image cache every two days at 00:00 UTC.
 - The legal section is prepared in English for German requirements, but still needs the final imprint details.
-- The page uses a small custom Three.js background inspired by pseudo-height fog and rotating product panels.
+- The hero renders a bright procedural fog/cloud atmosphere live in WebGL (`hero-atmosphere.js`, Three.js r165 from `vendor/`). All motion is shader-driven; scroll dives the camera through the fog banks.
